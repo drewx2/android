@@ -4,8 +4,11 @@ CyanogenMod for HTC DLX
 This tree requires the following additional trees:
 
 drewx2/android_device_htc_dlx
+
 drewx2/android_device_htc_msm8960-common
+
 android_kernel_htc_dlx
+
 android_vendor_htc_dlx
 
 Setup Build
