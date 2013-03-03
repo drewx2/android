@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="drewx2"
-           fetch="https://github.com" />
+  <remote name="drewx2"
+           fetch="https://github.com/drewx2" />
   
   <default revision="refs/heads/jellybean"
-           remote="drewx2"
            sync-c="true"
            sync-j="4" />
   
@@ -13,9 +12,6 @@
   <project path="device/htc/msm8960-common" name="drewx2/android_device_htc_msm8960-common" />
   <project path="kernel/htc/msm8960" name="drewx2/android_kernel_htc_dlx" revision="cm10" />
   <project path="vendor/htc/dlx" name="drewx2/android_vendor_htc_dlx" />
-
-</manifest>
-<manifest>
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com" />
