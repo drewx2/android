@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest> 
   <remote name="drewx2"
-           fetch="https://github.com/drewx2" />   
+           fetch="https://github.com/drewx2/" />   
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com" />
