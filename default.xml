@@ -4,6 +4,15 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com" />
 
+  <remote  name="drewx2"
+    	   fetch="https://github.com" />
+  		   
+  <project path="android" name="drewx2/android" />
+  <project path="device/htc/dlx" name="drewx2/android_device_htc_dlx" />
+  <project path="device/htc/msm8960-common" name="drewx2/android_device_htc_msm8960-common" />
+  <project path="kernel/htc/msm8960" name="drewx2/android_kernel_htc_dlx" revision="cm10" />
+  <project path="vendor/htc/dlx" name="drewx2/android_vendor_htc_dlx" />
+
   <remote  name="github"
            fetch=".."
            review="review.cyanogenmod.org" />
@@ -19,12 +28,6 @@
   <project path="build" name="CyanogenMod/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  
-  <project path="android" name="drewx2/android" />
-  <project path="device/htc/dlx" name="drewx2/android_device_htc_dlx" />
-  <project path="device/htc/msm8960-common" name="drewx2/android_device_htc_msm8960-common" />
-  <project path="kernel/htc/msm8960" name="drewx2/android_kernel_htc_dlx" revision="cm10" />
-  <project path="vendor/htc/dlx" name="drewx2/android_vendor_htc_dlx" />
 
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" />
   <project path="bionic" name="CyanogenMod/android_bionic" />
