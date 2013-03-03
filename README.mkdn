@@ -1,50 +1,44 @@
-CyanogenMod
-===========
+CyanogenMod for HTC DLX
+=======================
 
-Submitting Patches
-------------------
-Patches are always welcome!  Please submit your patches via CyanogenMod Gerrit!
-You can do this by using these commands:
+Setup Build
+-----------------------------
 
-    (From root android directory)
-    . build/envsetup.sh
-    (Go to repo you are patching, make your changes and commit)
-    cmgerrit <for(new)/changes(patch set)> <branch/change-id> 
+mkdir ~/android/system
 
-    repo start jellybean .
-    (Make your changes and commit)
-    repo upload .
-Note: "." meaning current directory
-For more help on using this tool, use this command: repo help upload
+cd ~/android/system
 
-Make your changes and commit with a detailed message, starting with what you are working with (i.e. vision: Update Kernel)
-Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
+repo init -u git://github.com/drewx2/android.git -b jellybean
 
-To view the status of your and others' patches, visit [CyanogenMod Code Review](http://review.cyanogenmod.org/)
+repo sync
 
 
-Getting Started
----------------
+Before Building
+------------------------------
 
-To get started with Android/CyanogenMod, you'll need to get
-familiar with [Git and Repo](http://source.android.com/download/using-repo).
+Add the following paths (if using ubuntu, vi ~/.bashrc):
 
-To initialize your local repository using the CyanogenMod trees, use a command like this:
+export USE_CCACHE=1
 
-    repo init -u git://github.com/CyanogenMod/android.git -b jellybean
+export CCACHE_DIR=~/cache
 
-Then to sync up:
+export PATH=~~/android/system/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/:$PATH
 
-    repo sync
+export TOP=~/android/system
 
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
+export ARCH=arm
 
-For more information on this Github Organization and how it is structured, 
-please [read the wiki article](http://wiki.cyanogenmod.org/index.php/Github_Organization)
+export SUBARCH=arm
 
-Buildbot
---------
+export CROSS_COMPILE=arm-eabi-
 
-All supported devices are built nightly and periodically as changes are committed to ensure the source trees remain buildable.
 
-You can view the current build statuses at [CyanogenMod Jenkins](http://jenkins.cyanogenmod.org/)
+Build
+----------------------------
+
+. build/envsetup.sh
+
+brunch dlx
+
+
+Problems? Visit XDA thread @ http://forum.xda-developers.com/showthread.php?t=2056517
