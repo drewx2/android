@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest> 
   <remote name="drewx2"
-           fetch="https://github.com/drewx2/" />   
+           fetch="https://github.com/drewx2/">
+      <project path="device/htc/dlx" name="drewx2/android_device_htc_dlx" revision="refs/heads/jellybean" />
+
+  </remote> 
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com" />
@@ -13,7 +16,10 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
   
- <project remote="drewx2" path="android" name="drewx2/android" revision="refs/heads/jellybean" />
+  <project path="android" 
+           name="drewx2/android" 
+           remote="drewx2" 
+           revision="refs/heads/jellybean" />
   <project remote="drewx2" path="device/htc/dlx" name="drewx2/android_device_htc_dlx" revision="refs/heads/jellybean" />
   <project remote="drewx2" path="device/htc/msm8960-common" name="drewx2/android_device_htc_msm8960-common" revision="refs/heads/jellybean" />
   <project remote="drewx2" path="kernel/htc/msm8960" name="drewx2/android_kernel_htc_dlx" revision="refs/heads/cm10" />
