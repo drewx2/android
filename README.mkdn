@@ -1,4 +1,4 @@
-CyanogenMod for HTC DLX
+CyanogenMod 10 for HTC DLX
 =======================
 
 Visit http://source.android.com/source/initializing.html first to prep build
