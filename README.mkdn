@@ -1,7 +1,10 @@
 CyanogenMod for HTC DLX
 =======================
 
-This tree requires the following additional trees:
+Visit http://source.android.com/source/initializing.html first to prep build
+
+
+This tree requires the following additional trees (syncing repo will download all for you):
 
 drewx2/android_device_htc_dlx
 
@@ -11,19 +14,19 @@ android_kernel_htc_dlx
 
 android_vendor_htc_dlx
 
-Setup Build
------------------------------
+Download Source
+------------------------------
 
-mkdir ~/android/system
+1) mkdir -p ~/android/system; cd ~/android/system
 
-cd ~/android/system
+2) repo init -u https://github.com/drewx2/android.git -b jellybean
 
-repo init -u git://github.com/drewx2/android.git -b jellybean
+3) repo sync
 
-repo sync
+4) ./vendor/cm/get-prebuilts
 
 
-Before Building
+Prepare for building
 ------------------------------
 
 Add the following paths (if using ubuntu, vi ~/.bashrc):
@@ -52,3 +55,4 @@ brunch dlx
 
 
 Problems? Visit XDA thread @ http://forum.xda-developers.com/showthread.php?t=2056517
+
