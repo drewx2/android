@@ -6,13 +6,13 @@ Visit http://source.android.com/source/initializing.html first to prep build
 
 This tree requires the following additional trees (syncing repo will download all for you):
 
-drewx2/android_device_htc_dlx
+drewx2/android_device_htc_dlx (master)
 
-drewx2/android_device_htc_msm8960-common
+drewx2/android_device_htc_msm8960-common  (master)
 
-android_kernel_htc_dlx
+android_kernel_htc_dlx  (cm10)
 
-android_vendor_htc_dlx
+android_vendor_htc_dlx  (master)
 
 Download Source
 ------------------------------
